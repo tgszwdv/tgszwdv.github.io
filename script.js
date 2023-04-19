@@ -2,12 +2,12 @@ const videos = [
   //{ link: "https://www.youtube.com/embed/yo4pmauhugo", nome: "Tiesto", style: "Trance", nota: "" },
   //{ link: "https://www.youtube.com/embed/9Sc-ir2UwGU", nome: "Armin van Buuren", style: "Trance", nota: "" },
  // { link: "https://www.youtube.com/embed/fzQ6gRAEoy0", nome: "David Guetta", style: "Electro House", nota: "" }
-{ link: "https://www.youtube.com/embed/qrOCRqYjebI?t=415", nome: "Acraze", style: "Deephouse", nota: "" },
+/*{ link: "https://www.youtube.com/embed/qrOCRqYjebI?t=415", nome: "Acraze", style: "Deephouse", nota: "" },
 { link: "https://www.youtube.com/embed/Evz8iIl5yrM?t=1607?autoplay=1", nome: "Afrojack", style: "Pop/House/Progressive/Big Room", nota: "" },
 { link: "https://www.youtube.com/embed/1FHngx3GvJA?t=181?autoplay=1", nome: "Aline Rocha", style: "Soulful & House", nota: "" },
 { link: "https://www.youtube.com/embed/j1ZZOuxtzrc?t=582?autoplay=1", nome: "Alok", style: "DeepHouse/House/Brazilian Bass", nota: "" },
 { link: "https://www.youtube.com/embed/yrU-zBOGZPw?t=961?autoplay=1", nome: "Amber Bross", style: "Trance/Liquid Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/EF9JTFq8ErY?t=2940?autoplay=1", nome: "aname", style: "Trance/Liquid Trance", nota: "" },
+{ link: "https://www.youtube.com/embed/EF9JTFq8ErY?t=2940?autoplay=1", nome: "aname", style: "Trance/Liquid Trance", nota: "" },*/
 { link: "https://www.youtube.com/embed/qrOCRqYjebI?t=415", nome: "Acraze", style: "Deephouse", nota: "" },
 { link: "https://www.youtube.com/embed/Evz8iIl5yrM?t=1607", nome: "Afrojack", style: "Pop/House/Progressive/Big Room", nota: "" },
 { link: "https://www.youtube.com/embed/1FHngx3GvJA?t=181", nome: "Aline Rocha", style: "Soulful & House", nota: "" },
@@ -52,8 +52,8 @@ const videos = [
 { link: "https://www.youtube.com/embed/GdMtN5Ifm-I?t=1163", nome: "Martin Garrix", style: "Progressive House/Big Room/Future Bass", nota: "" },
 { link: "https://www.youtube.com/embed/OsZ9Ik0G_KE?t=2322", nome: "Mattn", style: "House/Big Room", nota: "" },
 { link: "https://www.youtube.com/embed/rKmeiBDUWt8?t=1377", nome: "Nervo", style: "House/Psy/ElectroHouse/ProgressiveHouse", nota: "" },
-{ link: "https://www.youtube.com/embed/t-YvpDRBnJk?t=761", nome: "Netsky", style: "Drum And Bass", nota: "" }
-/*{ link: "https://www.youtube.com/embed/6GIA7hXhwNI?t=2260", nome: "Nightmre", style: "Dubstep", nota: "" },
+{ link: "https://www.youtube.com/embed/t-YvpDRBnJk?t=761", nome: "Netsky", style: "Drum And Bass", nota: "" },
+{ link: "https://www.youtube.com/embed/6GIA7hXhwNI?t=2260", nome: "Nightmre", style: "Dubstep", nota: "" },
 { link: "https://www.youtube.com/embed/0fKRazDggq8?t=4370", nome: "Ownboss", style: "Deephouse", nota: "" },
 { link: "https://www.youtube.com/embed/QKxGGpJNU1w?t=1695", nome: "Paul Kalbrenner", style: "Techno/Trance", nota: "" },
 { link: "https://www.youtube.com/embed/iA1aGTood8c?t=934", nome: "Pontifexx", style: "DeepHouse/House/", nota: "" },
@@ -69,7 +69,7 @@ const videos = [
 { link: "https://www.youtube.com/embed/r5jKJBhk3aY?t=194", nome: "Vinne", style: "Deephouse/Brazilian Bass", nota: "" },
 { link: "https://www.youtube.com/embed/KgO7--NuCfs?t=1490", nome: "Yves V", style: "Indie/Progressive House/ElectroHouse", nota: "" },
 { link: "https://www.youtube.com/embed/Lb0SitkYgbo?t=1935", nome: "Zac", style: "House/Electro/DeepHouse", nota: "" }
-*/
+
 ];
 
 let indice = 0;
