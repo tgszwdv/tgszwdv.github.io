@@ -33,7 +33,7 @@ document.querySelector('#proximo').addEventListener('click', () => {
     return;
   }
   meuIframe.src = videos[indice].link;
-  notaInput.value = '0';
+  notaInput.value = '';
 });
 
 function atualizarTabela() {
