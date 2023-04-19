@@ -7,10 +7,8 @@ const videos = [
 { link: "https://www.youtube.com/embed/1FHngx3GvJA?t=181?autoplay=1", nome: "Aline Rocha", style: "Soulful & House", nota: "" },
 { link: "https://www.youtube.com/embed/j1ZZOuxtzrc?t=582?autoplay=1", nome: "Alok", style: "DeepHouse/House/Brazilian Bass", nota: "" },
 { link: "https://www.youtube.com/embed/yrU-zBOGZPw?t=961?autoplay=1", nome: "Amber Bross", style: "Trance/Liquid Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/EF9JTFq8ErY?t=2940?autoplay=1", nome: "aname", style: "Trance/Liquid Trance", nota: "" }
-
-
-/*{ link: "https://www.youtube.com/embed/qrOCRqYjebI?t=415", nome: "Acraze", style: "Deephouse", nota: "" },
+{ link: "https://www.youtube.com/embed/EF9JTFq8ErY?t=2940?autoplay=1", nome: "aname", style: "Trance/Liquid Trance", nota: "" },
+{ link: "https://www.youtube.com/embed/qrOCRqYjebI?t=415", nome: "Acraze", style: "Deephouse", nota: "" },
 { link: "https://www.youtube.com/embed/Evz8iIl5yrM?t=1607", nome: "Afrojack", style: "Pop/House/Progressive/Big Room", nota: "" },
 { link: "https://www.youtube.com/embed/1FHngx3GvJA?t=181", nome: "Aline Rocha", style: "Soulful & House", nota: "" },
 { link: "https://www.youtube.com/embed/j1ZZOuxtzrc?t=582", nome: "Alok", style: "DeepHouse/House/Brazilian Bass", nota: "" },
@@ -31,8 +29,8 @@ const videos = [
 { link: "https://www.youtube.com/embed/xOqULY4ZBT0?t=1200", nome: "Chapeleiro", style: "Psy Trance", nota: "" },
 { link: "https://www.youtube.com/embed/5hZzU7Jhr0I?t=1035", nome: "Chemical Surf", style: "Deephouse", nota: "" },
 { link: "https://www.youtube.com/embed/psHA5maXX_4?t=1464", nome: "Coone", style: "HardStyle", nota: "" },
-{ link: "https://www.youtube.com/embed/U6YBRoq2zEU?t=2993", nome: "Da Tweekaz", style: "HardStyle", nota: "" },
-{ link: "https://www.youtube.com/embed/nsNCK3EJpao?t=407", nome: "Dimitri vegas & Like mike", style: "Big Room/Trance/Techno", nota: "" },
+{ link: "https://www.youtube.com/embed/U6YBRoq2zEU?t=2993", nome: "Da Tweekaz", style: "HardStyle", nota: "" }
+/*{ link: "https://www.youtube.com/embed/nsNCK3EJpao?t=407", nome: "Dimitri vegas & Like mike", style: "Big Room/Trance/Techno", nota: "" },
 { link: "https://www.youtube.com/embed/4QfLqcvnwWg?t=816", nome: "Dino Lenny", style: "Techno/Underground", nota: "" },
 { link: "https://www.youtube.com/embed/xMQKQz6H2RA?t=1319", nome: "Dj Glen", style: "House Classics/DeepHouse", nota: "" },
 { link: "https://www.youtube.com/embed/WZCQlZsHkHo?t=1957", nome: "Dj Marky ", style: "Drum And Bass", nota: "" },
