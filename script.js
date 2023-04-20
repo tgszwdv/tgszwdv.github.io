@@ -4,9 +4,82 @@ let videos;
 if (JSON.parse(localStorage.getItem('indiceSalvo')) > 0) {
  //let indice
   videos = JSON.parse(localStorage.getItem('notasSalvas'));
-  console.log('ta certo')
+  //console.log('ta certo')
   indice = JSON.parse(localStorage.getItem('indiceSalvo'));
-}else{
+
+}
+if( indice = JSON.parse(localStorage.getItem('indiceSalvo')) >= 60){
+videos = JSON.parse(localStorage.getItem('notasSalvas'));
+ //console.log('ENTRO ONDE EU QUERO')  
+  
+ 
+ //console.log(indice)
+
+ indice = 0
+ 
+ const tabelaNotas = document.querySelector('#tabela-notas');
+ 
+ document.querySelector('#proximo').addEventListener('click', () => {
+   const notaInput = document.querySelector('#nota');
+   const nota = notaInput.value;
+   if (nota < 0 || nota > 10) {
+     alert('A nota deve estar entre 0 e 10.');
+     return;
+   }
+   videos[indice].nota = nota;
+ console.log(indice) 
+ console.log(videos[indice])
+ console.log('Nome:'+ videos[indice].nome)
+ console.log('Nota:'+videos[indice].nota)
+ console.log('Video:'+videos[indice].link)
+   atualizarTabela();
+   indice++;
+   console.log('Indice Atual:'+indice)
+   localStorage.setItem('notasSalvas', JSON.stringify(videos));
+   localStorage.setItem('indiceSalvo', JSON.stringify(indice));
+   if (indice >= videos.length) {
+     alert('Você avaliou todos os vídeos!');
+     return;
+   }
+   meuIframe.src = videos[indice].link;
+   notaInput.value = '';
+   //console.log(notas);
+ });
+ 
+ function atualizarTabela() {
+   videos.sort((a, b) => b.nota - a.nota);
+   tabelaNotas.innerHTML = '';
+   for (const video of videos) {
+     const tr = document.createElement('tr');
+     tr.innerHTML = `
+       <td>${video.nome}</td>
+       <td>${video.nota}</td>
+       <td>${video.style}</td>
+     `;
+     const btn = document.createElement('button2');
+     btn.textContent = 'Editar';
+     btn.addEventListener('click', () => {
+       const novaNota = prompt('Insira a nova nota para o vídeo:');
+       if (novaNota !== null && !isNaN(novaNota)) {
+         video.nota = Number(novaNota);
+         atualizarTabela();
+       }
+     });
+     tr.insertCell().appendChild(btn);
+     tabelaNotas.appendChild(tr);
+   }
+ }
+ 
+ // Chamada inicial da função para exibir a tabela
+ atualizarTabela();
+
+
+}
+
+
+
+
+else{
 
 
   const videos = [{ link: "https://www.youtube.com/embed/qrOCRqYjebI?t=415", nome: "Acraze", style: "Deephouse", nota: "" },
@@ -137,13 +210,7 @@ function atualizarTabela() {
 // Chamada inicial da função para exibir a tabela
 atualizarTabela();
 
-
-
-
 }
-
-
-
 
 
 
