@@ -5,7 +5,7 @@ if (JSON.parse(localStorage.getItem('indiceSalvo')) > 0) {
  //let indice
   videos = JSON.parse(localStorage.getItem('notasSalvas'));
   console.log('ta certo')
-  indice = JSON.parse(localStorage.getItem('indiceSalvo')) - 1;
+  indice = JSON.parse(localStorage.getItem('indiceSalvo'));
 }else{
 
 
@@ -95,6 +95,7 @@ console.log(indice)
 console.log(videos[indice])
 console.log('Nome:'+ videos[indice].nome)
 console.log('Nota:'+videos[indice].nota)
+console.log('Video:'+videos[indice].link)
   atualizarTabela();
   indice++;
   console.log('Indice Atual:'+indice)
@@ -136,10 +137,11 @@ atualizarTabela();
 
 
 
-console.log(indice)
+console.log(indice) 
 console.log(videos[indice])
 console.log('Nome:'+ videos[indice].nome)
 console.log('Nota:'+videos[indice].nota)
+console.log('Video:'+videos[indice].link)
 const meuIframe = document.querySelector('#meu-iframe');
 meuIframe.src = videos[indice].link;
 
