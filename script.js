@@ -120,12 +120,24 @@ function atualizarTabela() {
       <td>${video.nota}</td>
       <td>${video.style}</td>
     `;
+    const btn = document.createElement('button2');
+    btn.textContent = 'Editar';
+    btn.addEventListener('click', () => {
+      const novaNota = prompt('Insira a nova nota para o vídeo:');
+      if (novaNota !== null && !isNaN(novaNota)) {
+        video.nota = Number(novaNota);
+        atualizarTabela();
+      }
+    });
+    tr.insertCell().appendChild(btn);
     tabelaNotas.appendChild(tr);
-
   }
 }
 
+// Chamada inicial da função para exibir a tabela
 atualizarTabela();
+
+
 
 
 }
@@ -178,11 +190,21 @@ function atualizarTabela() {
       <td>${video.nota}</td>
       <td>${video.style}</td>
     `;
+    const btn = document.createElement('button2');
+    btn.textContent = 'Editar';
+    btn.addEventListener('click', () => {
+      const novaNota = prompt('Insira a nova nota para o vídeo:');
+      if (novaNota !== null && !isNaN(novaNota)) {
+        video.nota = Number(novaNota);
+        atualizarTabela();
+      }
+    });
+    tr.insertCell().appendChild(btn);
     tabelaNotas.appendChild(tr);
-
   }
 }
 
+// Chamada inicial da função para exibir a tabela
 atualizarTabela();
 
 
