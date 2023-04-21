@@ -124,6 +124,18 @@ function atualizarTabela() {
     tr.insertCell().appendChild(btn);
     tabelaNotas.appendChild(tr);
   }
+
+
+  document.querySelector('#resetar').addEventListener('click', () => {
+    indice = 0
+    for (const video of videos) {
+      video.nota = "";
+    }
+    atualizarTabela();
+    localStorage.setItem('notasSalvas', JSON.stringify(videos));
+  });
+
+
 }
 
 atualizarTabela();
