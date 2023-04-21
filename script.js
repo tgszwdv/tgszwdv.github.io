@@ -124,7 +124,8 @@ function atualizarTabela() {
     tr.insertCell().appendChild(btn);
     tabelaNotas.appendChild(tr);
   }
-
+  
+}
 
   document.querySelector('#resetar').addEventListener('click', () => {
     indice = 0
@@ -135,7 +136,58 @@ function atualizarTabela() {
     localStorage.setItem('notasSalvas', JSON.stringify(videos));
   });
 
+function exportarTabela() {
+    console.log('Exportando tabela...');
+  
+    const tabela = document.createElement('table');
+    tabela.classList.add('tabela-export');
+  
+    // cabeçalho
+    const cabecalho = tabela.createTHead();
+    const rowCabecalho = cabecalho.insertRow(0);
+    const colNome = rowCabecalho.insertCell(0);
+    const colNota = rowCabecalho.insertCell(1);
+    const colStyle = rowCabecalho.insertCell(2);
+    colNome.innerHTML = '<strong>Nome</strong>';
+    colNota.innerHTML = '<strong>Nota</strong>';
+    colStyle.innerHTML = '<strong>Estilo</strong>';
+    // alterando a cor do texto para branco
+    colNome.style.color = '#000000';
+    colNota.style.color = '#000000';
+    colStyle.style.color = '#000000';
+  
+    // conteúdo
+    const corpoTabela = tabela.createTBody();
+    for (const video of videos) {
+      const tr = corpoTabela.insertRow();
+      const colNome = tr.insertCell();
+      const colNota = tr.insertCell();
+      const colStyle = tr.insertCell();
+      colNome.textContent = video.nome;
+      colNota.textContent = video.nota;
+      colStyle.textContent = video.style;
+      // alterando a cor do texto para branco
+      colNome.style.color = '#000000';
+      colNota.style.color = '#000000';
+      colStyle.style.color = '#000000';
+    }
+  
+    document.body.appendChild(tabela);
+  
+    html2canvas(tabela, {backgroundColor: '#000000'}).then(function(canvas) {
+      const link = document.createElement('a');
+      link.download = 'tabela.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+  
+      document.body.removeChild(tabela);
+    });
+  }
+  document.querySelector('#exportar').addEventListener('click', exportarTabela);
+  
+  
 
-}
+
+
 
 atualizarTabela();
