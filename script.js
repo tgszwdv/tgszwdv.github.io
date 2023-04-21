@@ -1,24 +1,26 @@
-let indice;
+let indice=0;
 let videos;
 
 if (JSON.parse(localStorage.getItem('indiceSalvo')) > 0) {
  //let indice
   videos = JSON.parse(localStorage.getItem('notasSalvas'));
-  //console.log('to no if')
+  console.log('to no if')
   indice = JSON.parse(localStorage.getItem('indiceSalvo'));
-   
+  
+  if (JSON.parse(localStorage.getItem('indiceSalvo')) >= 60){
+    console.log('to no segundo if')
+    indice= 0
+  
+    
+  }
   
 }
 
 
-if (JSON.parse(localStorage.getItem('indiceSalvo')) >= 60){
-  //console.log('to no segundo if')
-  indice= 0
 
-  
-}
+
 else{
- // console.log('to no else')
+ console.log('to no else')
 
  videos = [{ link: "https://www.youtube.com/embed/qrOCRqYjebI?t=415", nome: "Acraze", style: "Deephouse", nota: "" },
 { link: "https://www.youtube.com/embed/Evz8iIl5yrM?t=1607", nome: "Afrojack", style: "Pop/House/Progressive/Big Room", nota: "" },
@@ -87,7 +89,7 @@ else{
 //console.log(indice)
 
 
-let indice = 0
+
 
 const meuIframe = document.querySelector('#meu-iframe');
 meuIframe.src = videos[indice].link;
