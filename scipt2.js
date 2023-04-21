@@ -2,6 +2,14 @@
 let indice = 0;
 let videos;
 
+
+const notaInput = document.getElementById('nota');
+
+window.onload = function() {
+  notaInput.focus();
+}
+
+
 if (JSON.parse(localStorage.getItem('indiceSalvo')) > 0) {
   videos = JSON.parse(localStorage.getItem('notasSalvas'));
   indice = JSON.parse(localStorage.getItem('indiceSalvo'));
