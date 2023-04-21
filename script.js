@@ -1,3 +1,4 @@
+
 let indice = 0;
 let videos;
 
@@ -152,9 +153,9 @@ function exportarTabela() {
     colNota.innerHTML = '<strong>Nota</strong>';
     colStyle.innerHTML = '<strong>Estilo</strong>';
     // alterando a cor do texto para branco
-    colNome.style.color = '#000000';
-    colNota.style.color = '#000000';
-    colStyle.style.color = '#000000';
+    colNome.style.color = '#FFFACD';
+    colNota.style.color = '#FFFACD';
+    colStyle.style.color = '#FFFACD';
   
     // conteúdo
     const corpoTabela = tabela.createTBody();
@@ -167,9 +168,9 @@ function exportarTabela() {
       colNota.textContent = video.nota;
       colStyle.textContent = video.style;
       // alterando a cor do texto para branco
-      colNome.style.color = '#000000';
-      colNota.style.color = '#000000';
-      colStyle.style.color = '#000000';
+      colNome.style.color = '#FFFACD';
+      colNota.style.color = '#FFFACD';
+      colStyle.style.color = '#FFFACD';
     }
   
     document.body.appendChild(tabela);
