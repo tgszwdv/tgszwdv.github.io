@@ -112,6 +112,11 @@ document.querySelector('#proximo').addEventListener('click', () => {
 });
 
 function atualizarTabela() {
+window.onload = function() {
+
+  notaInput.focus();
+
+}
   videos.sort((a, b) => b.nota - a.nota);
   tabelaNotas.innerHTML = '';
   for (const video of videos) {
