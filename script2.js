@@ -92,13 +92,16 @@ meuIframe.src = videos[indice].link;
 const tabelaNotas = document.querySelector('#tabela-notas');
 
 document.querySelector('#proximo').addEventListener('click', () => {
+  notaInput.focus();
   const notaInput = document.querySelector('#nota');
   const nota = notaInput.value;
   if (nota < 0 || nota > 10) {
     alert('A nota deve estar entre 0 e 10.');
     return;
   }
+
   videos[indice].nota = nota;
+  notaInput.focus();
   atualizarTabela();
   indice++;
   localStorage.setItem('notasSalvas', JSON.stringify(videos));
@@ -112,11 +115,13 @@ document.querySelector('#proximo').addEventListener('click', () => {
 });
 
 function atualizarTabela() {
+  
 window.onload = function() {
 
   notaInput.focus();
 
 }
+  notaInput.focus();
   videos.sort((a, b) => b.nota - a.nota);
   tabelaNotas.innerHTML = '';
   for (const video of videos) {
