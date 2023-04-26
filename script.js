@@ -107,6 +107,7 @@ function atualizarTabela() {
   videos.sort((a, b) => b.nota - a.nota);
   tabelaNotas.innerHTML = '';
   for (const video of videos) {
+    document.getElementById("nota").focus();
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${video.nome}</td>
