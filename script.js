@@ -99,6 +99,10 @@ document.querySelector('#proximo').addEventListener('click', () => {
   localStorage.setItem('indiceSalvo', JSON.stringify(indice));
   if (indice >= videos.length) {
     alert('Você avaliou todos os vídeos!');
+    //
+    indice = 0;
+    JSON.parse(localStorage.getItem('indiceSalvo')) = indice ;
+    //
     return;
   }
   videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`
