@@ -82,8 +82,8 @@ const meuIframe = document.querySelector('#meu-iframe');
 meuIframe.src = videos[indice].link;
 
 const tabelaNotas = document.querySelector('#tabela-notas');
-//const videoInfo = document.getElementById('video-info');
- // videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`;
+const videoInfo = document.getElementById('video-info');
+ videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`;
 
 document.querySelector('#proximo').addEventListener('click', () => {
   const notaInput = document.querySelector('#nota');
@@ -105,7 +105,7 @@ document.querySelector('#proximo').addEventListener('click', () => {
     //
     return;
   }
-  //videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`
+  videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`
   meuIframe.src = videos[indice].link;
   notaInput.value = '';
 });
