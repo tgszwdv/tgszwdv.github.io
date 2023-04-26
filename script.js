@@ -86,7 +86,6 @@ const videoInfo = document.getElementById('video-info');
   videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`;
 
 document.querySelector('#proximo').addEventListener('click', () => {
-   videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`;
   const notaInput = document.querySelector('#nota');
   const nota = notaInput.value;
   if (nota < 0 || nota > 10) {
@@ -96,6 +95,7 @@ document.querySelector('#proximo').addEventListener('click', () => {
   videos[indice].nota = nota;
   atualizarTabela();
   indice++;
+  videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`
   localStorage.setItem('notasSalvas', JSON.stringify(videos));
   localStorage.setItem('indiceSalvo', JSON.stringify(indice));
   if (indice >= videos.length) {
