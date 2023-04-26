@@ -95,13 +95,13 @@ document.querySelector('#proximo').addEventListener('click', () => {
   videos[indice].nota = nota;
   atualizarTabela();
   indice++;
-  videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`
   localStorage.setItem('notasSalvas', JSON.stringify(videos));
   localStorage.setItem('indiceSalvo', JSON.stringify(indice));
   if (indice >= videos.length) {
     alert('Você avaliou todos os vídeos!');
     return;
   }
+  videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`
   meuIframe.src = videos[indice].link;
   notaInput.value = '';
 });
