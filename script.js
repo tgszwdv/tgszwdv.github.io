@@ -82,8 +82,11 @@ const meuIframe = document.querySelector('#meu-iframe');
 meuIframe.src = videos[indice].link;
 
 const tabelaNotas = document.querySelector('#tabela-notas');
+const videoInfo = document.getElementById('video-info');
+  videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`;
 
 document.querySelector('#proximo').addEventListener('click', () => {
+   videoInfo.textContent = `${videos[indice].nome} -${videos[indice].style}`;
   const notaInput = document.querySelector('#nota');
   const nota = notaInput.value;
   if (nota < 0 || nota > 10) {
