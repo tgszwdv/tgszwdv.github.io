@@ -5,167 +5,82 @@
   <title>TML</title>
   <style>
     body {
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 180vh;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/tgszwdv/tgszwdv.github.io/main/bkg.avif');
-  background-size: cover;
-  background-position: center;
-  color: rgb(0, 0, 0);
-}
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh; /* Usando min-height para garantir que o conteúdo ocupe pelo menos 100% da altura da tela */
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/tgszwdv/tgszwdv.github.io/main/bkg.avif');
+      background-size: cover;
+      background-position: center;
+      color: rgb(0, 0, 0);
+      margin: 0; /* Removendo margens para evitar espaços indesejados */
+      padding: 0; /* Removendo padding para evitar espaços indesejados */
+    }
 
-h1 {
-  font-size: 48px;
-  margin-top: 100px;
-  margin-bottom: 20px;
-  text-align: center;
-  text-shadow: 
-    0 0 2px rgba(0, 255, 255, 0.6),
-    0 0 2px rgba(0, 255, 255, 0.6),
-    0 0 10px white,
-    0 0 2px white;
-}
+    h1 {
+      font-size: 48px;
+      margin-top: 100px;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 
+        0 0 2px rgba(0, 255, 255, 0.6),
+        0 0 2px rgba(0, 255, 255, 0.6),
+        0 0 10px white,
+        0 0 2px white;
+    }
 
-#video-container {
-  margin-bottom: 20px;
-  box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6);
-}
-    
-#video-info{
-  font-size: 24px;
-  text-align: center;
-  text-shadow: 
-    0 0 2px rgba(0, 255, 255, 0.6),
-    0 0 2px rgba(0, 255, 255, 0.6),
-    0 0 10px white,
-    0 0 2px white;
-  color: rgb(5, 4, 4);
-  margin: 0;
-  padding: 10px;
-  border-radius: 5px;
-}
-    
-table {
-   border-collapse: collapse;
-  margin-top: 20px;
-  width: 60%;
-  color: white;
-  box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6);
-}
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
 
-th,
-td {
-  border: 1px solid rgba(0, 255, 255, 0.6);
-  padding: 8px;
-  text-align: center;
-}
+    .button-container button {
+      background-color: rgba(0, 255, 255, 0.6);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 0 10px; /* Adicione margens horizontais para separar os botões */
+      cursor: pointer;
+    }
 
-th {
-  background-color: rgba(0, 255, 255, 0.6);
-  font-weight: normal;
-}
+    .button-container button:hover {
+      background-color: rgba(0, 255, 255, 0.171);
+      box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6);
+    }
 
-tr:nth-child(even) {
-  background-color: rgba(170, 255, 255, 0.116);
-}
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+      box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6);
+      margin-top: auto; /* Empurre o footer para a parte inferior */
+    }
 
-tr:hover {
-  background-color: rgba(0, 255, 255, 0.6);
-}
-
-label {
-  font-size: 16px;
-  margin-right: 5px;
-  color: white;
-}
-
-input[type='number'] {
-  width: 50px;
-  font-size: 18px;
-  padding: 8px;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  outline: none;
-  text-align: center;
-  background-color: #1a1a1a;
-  color: white;
-}
-
-input[type='number']:focus {
-  border-bottom: 2px solid rgba(0, 255, 255, 0.6);
-}
-
-button {
-  background-color: rgba(0, 255, 255, 0.6);
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-
-button:hover {
-  background-color: rgba(0, 255, 255, 0.171);
-  box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6);
-}
-
-footer {
-  background-color: #1a1a1a;
-  color: white;
-  padding: px;
-  text-align: center;
-  font-size: 12px;
-  box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.6);
-}
-
-footer p {
-  font-size: 12px;
-  
-}
-
+    footer p {
+      font-size: 12px;
+    }
   </style>
 </head>
 <body>
-  <h1>TML PHASE 1</h1>
-  <div id="video-container">
-    <iframe id="meu-iframe" width="720" height="480" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <!-- <iframe id="meu-iframe" width="720" height="480" frameborder="0" allowfullscreen allow="autoplay"></iframe>-->
+  
+  <h1>TML2023</h1>
+  <div class="button-container">
+    <a href="https://tgszwdv.github.io/quinta-feira" target="_blank"><button>QUINTA-FEIRA</button></a>
+    <a href="https://tgszwdv.github.io/sexta-feira" target="_blank"><button>SEXTA-FEIRA</button></a>
+    <a href="https://tgszwdv.github.io/sabado" target="_blank"><button>SÁBADO</button></a>
   </div>
-  <p id="video-info"></p>
-  <div>
     
- 
-    <button id="exportar">Download Notas</button>
-    <label for="nota">Nota:</label>
-     <input type="number" id="nota" min="0" max="10">
-   <button id="proximo">Próximo vídeo</button>
-    <button id="resetar">Resetar Notas</button>
-    
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Nota</th>
-        <th>Gênero</th>
-        <th>Opção</th>
-      </tr>
-    </thead>
-    <tbody id="tabela-notas">
-    </tbody>
-  </table>
-  <script src="script.js"></script>
-  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   <footer>
     <p>@tgszwdv</p>
   </footer>
 </body>
 </html>
-
