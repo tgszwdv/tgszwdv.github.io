@@ -206,7 +206,12 @@ document.getElementById("headerHorario").addEventListener('click', () => {
   // Reload the page when the "Horario" header is clicked
   window.location.reload();
 });
-  
+
+document.getElementById("headerStyle").addEventListener('click', () => {
+  // Sort the videos array by 'Style' property in alphabetical order
+  videos.sort((a, b) => a.style.localeCompare(b.style));
+  atualizarTabela(); // Update the table
+});
   
 
 
