@@ -2,11 +2,11 @@
 let indice = 0;
 let videos;
 
-if (JSON.parse(localStorage.getItem('indiceSalvo1')) > 0) {
-  videos = JSON.parse(localStorage.getItem('notasSalvas1'));
-  indice = JSON.parse(localStorage.getItem('indiceSalvo1'));
+if (JSON.parse(localStorage.getItem('indiceSexta')) > 0) {
+  videos = JSON.parse(localStorage.getItem('sextaNotas'));
+  indice = JSON.parse(localStorage.getItem('indiceSexta'));
   //console.log('to no if')
-   if (indice >= 39 ) {
+   if (indice >= 45 ) {
     indice = 0;
     //console.log('to no segundo if')
    }
@@ -14,46 +14,52 @@ if (JSON.parse(localStorage.getItem('indiceSalvo1')) > 0) {
 } else {
   //console.log('to no else')
   videos = [
-{ link: "https://www.youtube.com/embed/qrOCRqYjebI?t=415", nome: "Acraze", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/Gy0RM9yjyhM?feature=share&t=1044", nome: "Âme ", style: "House/Techno", nota: "" },
-{ link: "https://www.youtube.com/embed/yD9OGm-oQPI?t=2510", nome: "ANNA ", style: "Dance/EDM", nota: "" },
-{ link: "https://www.youtube.com/embed/E-CdJFlKyNc?t=1865", nome: "Aura Vortex", style: "Psy Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/taJKkbv0jq0?t=1637", nome: "B Jones", style: "PopHouse/Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/U7JKifvBAbQ", nome: "Bakermat", style: "Dance/Pop/SoulHouse", nota: "" },
-{ link: "https://www.youtube.com/embed/Wqa5dhZmmJc?t=2802", nome: "Beltran", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/8Pl3j5xQFlU?t=869", nome: "Blastoyz", style: "Psy Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/_Lum1rSjs6w?t=1160", nome: "Capoon ", style: "Underground/Organic", nota: "" },
-{ link: "https://www.youtube.com/embed/9JTFHc6U8jc?t=503", nome: "Carola", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/UxsQ4_ZH870?t=6752", nome: "Cat Dealers", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/xOqULY4ZBT0?t=1200", nome: "Chapeleiro", style: "Psy Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/5hZzU7Jhr0I?t=1035", nome: "Chemical Surf", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/psHA5maXX_4?t=1464", nome: "Coone", style: "HardStyle", nota: "" },
-{ link: "https://www.youtube.com/embed/U6YBRoq2zEU?t=2993", nome: "Da Tweekaz", style: "HardStyle", nota: "" },
-{ link: "https://www.youtube.com/embed/nsNCK3EJpao?t=407", nome: "Dimitri vegas & Like mike", style: "Big Room/Trance/Techno", nota: "" },
-{ link: "https://www.youtube.com/embed/4QfLqcvnwWg?t=816", nome: "Dino Lenny", style: "Techno/Underground", nota: "" },
-{ link: "https://www.youtube.com/embed/xMQKQz6H2RA?t=1319", nome: "Dj Glen", style: "House Classics/DeepHouse", nota: "" },
-{ link: "https://www.youtube.com/embed/mfcylo7DZfQ?t=1187", nome: "Doozie", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/hf0YbhqY-Ew?t=4875", nome: "Fernanda Pistelli", style: "Psy Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/3wRtMN19JLM?t=2651", nome: "Freedom Fighters", style: "Psy Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/yi6d1kWsHSM?t=1272", nome: "Gabe ", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/cCOJdwxpme8", nome: "Gordo ", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/lXxtONrGqxk?t=842", nome: "Jørd ", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/MiLq2gm8s98?t=806", nome: "Korolova ", style: "Melodic Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/uuGScjfEGqw?t=1960", nome: "KVSH ", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/w8xQnshEIKg?t=907", nome: "Layla Benitez ", style: "Indie/Dance", nota: "" },
-{ link: "https://www.youtube.com/embed/6GHiYo3530o?t=4154", nome: "Liquid Soul", style: "Psy Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/a4g96HW1VuA?t=160", nome: "Liu", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/w3yRKiJ9Vqk?t=491", nome: "Lost Frequencies", style: "Tropical House/DownTempo", nota: "" },
-{ link: "https://www.youtube.com/embed/AhIElZvdRjY?t=1597", nome: "Mandy", style: "HardStyle", nota: "" },
-{ link: "https://www.youtube.com/embed/TPYF8Ni8EMI?t=869", nome: "MC STRETCH ", style: "Hard Trance", nota: "" },
-{ link: "https://www.youtube.com/embed/4y9BzMAE3FY?t=346", nome: "Meca ", style: "Melodic/Deep House", nota: "" },
-{ link: "https://www.youtube.com/embed/rKmeiBDUWt8?t=1377", nome: "Nervo", style: "House/Psy/ElectroHouse/ProgressiveHouse", nota: "" },
-{ link: "https://www.youtube.com/embed/0fKRazDggq8?t=4370", nome: "Ownboss", style: "Deephouse", nota: "" },
-{ link: "https://www.youtube.com/embed/MPt3z9ISwCs?t=2726", nome: "Pretty Pink", style: "Trance/Melodic Trance/AjunaDeeps", nota: "" },
-{ link: "https://www.youtube.com/embed/7DE0TAz5xbg?t=1480", nome: "Sebastian Ingrosso", style: "House/Dance/Progressive House", nota: "" },
-{ link: "https://www.youtube.com/embed/ErSIEdbe1DU?t=2812", nome: "Steve Aoki", style: "EDM/Progressive House/Big Room/Future Bass", nota: "" },
-{ link: "https://www.youtube.com/embed/iIQVr40Mnw4?t=787", nome: "Sub Zero Project", style: "Drum And Bass/Hardstyle", nota: "" },
-{ link: "https://www.youtube.com/embed/YgOmUZx-pL4", nome: "Vintage Culture", style: "Deephouse/Future House/Trance/Tropical House", nota: "" }
+{ link: "https://www.youtube.com/embed/pg5foEhBW2c", nome: "Beltran", style: "Deephouse", palco: "Essence by Beck's", horario: "14:00 - 15:30", nota: "" },
+{ link: "https://www.youtube.com/embed/rPRSIizQ6t0", nome: "Due", style: "House", palco: "CORE", horario: "14:00 - 15:30", nota: "" },
+{ link: "https://www.youtube.com/embed/2SMxKLTJAy4", nome: "Jessica Brankka", style: "House/Techno", palco: "Mainstage", horario: "14:00 - 15:30", nota: "" },
+{ link: "https://www.youtube.com/embed/ihkNRJD7Nng", nome: "Doozie", style: "Deephouse", palco: "Youphoria", horario: "15:00 - 16:00", nota: "" },
+{ link: "https://www.youtube.com/embed/hf0YbhqY-Ew?t=4875", nome: "Fernanda Pistelli", style: "Psy Trance", palco: "Tulip", horario: "15:00 - 16:00", nota: "" },
+{ link: "https://www.youtube.com/embed/BHwvMQeQVME", nome: "KVSH ", style: "Deephouse", palco: "Mainstage", horario: "15:30 - 16:30", nota: "" },
+{ link: "https://www.youtube.com/embed/yi6d1kWsHSM?t=1272", nome: "Gabe ", style: "Deephouse", palco: "Essence by Beck's", horario: "15:30 - 17:00", nota: "" },
+{ link: "https://www.youtube.com/embed/IygyK03E1bY", nome: "Mila Journée", style: "Melodic/Deep House", palco: "CORE", horario: "15:30 - 17:00", nota: "" },
+{ link: "https://www.youtube.com/embed/E-CdJFlKyNc?t=1865", nome: "Aura Vortex", style: "Psy Trance", palco: "Tulip", horario: "16:00 - 17:00", nota: "" },
+{ link: "https://www.youtube.com/embed/M2ED8cWt7AU", nome: "Dj Glen", style: "House Classics/DeepHouse", palco: "Youphoria", horario: "16:00 - 17:00", nota: "" },
+{ link: "https://www.youtube.com/embed/o8UEQXwfXIQ", nome: "Carola", style: "Deephouse", palco: "Mainstage", horario: "16:30 - 17:30", nota: "" },
+{ link: "https://www.youtube.com/embed/3wRtMN19JLM?t=2651", nome: "Freedom Fighters", style: "Psy Trance", palco: "Tulip", horario: "17:00 - 18:00", nota: "" },
+{ link: "https://www.youtube.com/embed/UT_66xW3lck", nome: "Jørd ", style: "Deephouse", palco: "Youphoria", horario: "17:00 - 18:00", nota: "" },
+{ link: "https://www.youtube.com/embed/_Lum1rSjs6w?t=1160", nome: "Capoon ", style: "Underground/Organic", palco: "CORE", horario: "17:00 - 18:30", nota: "" },
+{ link: "https://www.youtube.com/embed/n6ei2S1t6tI", nome: "Layla Benitez ", style: "Indie/Dance", palco: "Essence by Beck's", horario: "17:00 - 18:30", nota: "" },
+{ link: "https://www.youtube.com/embed/sK54sgHQBDc", nome: "Cat Dealers", style: "Deephouse", palco: "Mainstage", horario: "17:35 - 18:35", nota: "" },
+{ link: "https://www.youtube.com/embed/6GHiYo3530o?t=4154", nome: "Liquid Soul", style: "Psy Trance", palco: "Tulip", horario: "18:00 - 19:00", nota: "" },
+{ link: "https://www.youtube.com/embed/4y9BzMAE3FY?t=346", nome: "Meca ", style: "Melodic/Deep House", palco: "Youphoria", horario: "18:00 - 19:00", nota: "" },
+{ link: "https://www.youtube.com/embed/4r-M7lqUSKo", nome: "Dino Lenny", style: "Techno/Underground", palco: "CORE", horario: "18:30 - 20:00", nota: "" },
+{ link: "https://www.youtube.com/embed/0XgH-zAGvwA", nome: "Francis Mercier", style: "Dance", palco: "Essence by Beck's", horario: "18:30 - 20:00", nota: "" },
+{ link: "https://www.youtube.com/embed/U0rD-PMKAt4", nome: "B Jones", style: "Deephouse", palco: "Mainstage", horario: "18:40 - 19:40", nota: "" },
+{ link: "https://www.youtube.com/embed/CVKBlYp62M8", nome: "Chapeleiro", style: "Psy Trance", palco: "Tulip", horario: "19:00 - 20:00", nota: "" },
+{ link: "https://www.youtube.com/embed/P9mnmm-zxcI", nome: "Liu", style: "Deephouse", palco: "Youphoria", horario: "19:00 - 20:00", nota: "" },
+{ link: "https://www.youtube.com/embed/r9O_lNCx5EA", nome: "Nervo", style: "House/Psy/ElectroHouse/ProgressiveHouse", palco: "Mainstage", horario: "19:40 - 20:40", nota: "" },
+{ link: "https://www.youtube.com/embed/tyoSiO9Iccw&t=968s", nome: "Blastoyz", style: "Psy Trance", palco: "Tulip", horario: "20:00 - 21:00", nota: "" },
+{ link: "https://www.youtube.com/embed/5hZzU7Jhr0I?t=1035", nome: "Chemical Surf", style: "Deephouse", palco: "Youphoria", horario: "20:00 - 21:00", nota: "" },
+{ link: "https://www.youtube.com/embed/6dB0n_mLqJA", nome: "Jaguar", style: "House", palco: "CORE", horario: "20:00 - 22:00", nota: "" },
+{ link: "https://www.youtube.com/embed/9ynMx2qAYAE", nome: "Korolova ", style: "Melodic Trance", palco: "Essence by Beck's", horario: "20:00 - 22:00", nota: "" },
+{ link: "https://www.youtube.com/embed/0Settohf92Q", nome: "ANNA ", style: "Dance/EDM", palco: "Mainstage", horario: "20:40 - 21:40", nota: "" },
+{ link: "https://www.youtube.com/embed/psHA5maXX_4?t=1464", nome: "Coone", style: "HardStyle", palco: "Tulip", horario: "21:00 - 22:00", nota: "" },
+{ link: "https://www.youtube.com/embed/MPt3z9ISwCs?t=2726", nome: "Pretty Pink", style: "Trance/Melodic Trance/AjunaDeeps", palco: "Youphoria", horario: "21:00 - 22:00", nota: "" },
+{ link: "https://www.youtube.com/embed/aAnHOnEF_PI", nome: "Vintage Culture", style: "Deephouse/Future House/Trance/Tropical House", palco: "Mainstage", horario: "21:45 - 22:45", nota: "" },
+{ link: "https://www.youtube.com/embed/cCOJdwxpme8", nome: "Gordo ", style: "Deephouse", palco: "Essence by Beck's", horario: "22:00 - 00:00", nota: "" },
+{ link: "https://www.youtube.com/embed/NgetGgcdEd4", nome: "Skepta", style: "raper ? Wtf tml", palco: "CORE", horario: "22:00 - 00:00", nota: "" },
+{ link: "https://www.youtube.com/embed/rMzSGJLYkCM", nome: "Mandy", style: "HardStyle", palco: "Tulip", horario: "22:00 - 23:00", nota: "" },
+{ link: "https://www.youtube.com/embed/z0yYfuTqxn4", nome: "Ownboss", style: "Deephouse", palco: "Youphoria", horario: "22:00 - 23:00", nota: "" },
+{ link: "https://www.youtube.com/embed/7DE0TAz5xbg?t=1480", nome: "Sebastian Ingrosso", style: "House/Dance/Progressive House", palco: "Mainstage", horario: "22:50 - 23:50", nota: "" },
+{ link: "https://www.youtube.com/embed/U7JKifvBAbQ", nome: "Bakermat", style: "Dance/Pop/SoulHouse", palco: "Youphoria", horario: "23:00 - 00:00", nota: "" },
+{ link: "https://www.youtube.com/embed/jO7_r2nf__k", nome: "Da Tweekaz", style: "HardStyle", palco: "Tulip", horario: "23:00 - 00:00", nota: "" },
+{ link: "https://www.youtube.com/embed/A4lTUgJWNIw&t=1s", nome: "Dimitri vegas & Like mike", style: "Big Room/Trance/Techno", palco: "Mainstage", horario: "23:50 - 00:50", nota: "" },
+{ link: "https://www.youtube.com/embed/IajHfZrqS4w", nome: "Lost Frequencies", style: "Tropical House/DownTempo", palco: "Youphoria", horario: "00:00 - 01:00", nota: "" },
+{ link: "https://www.youtube.com/embed/iIQVr40Mnw4?t=787", nome: "Sub Zero Project", style: "Drum And Bass/Hardstyle", palco: "Tulip", horario: "00:00 - 01:00", nota: "" },
+{ link: "https://www.youtube.com/embed/Gy0RM9yjyhM&t=1127s", nome: "Âme", style: "House/Techno", palco: "CORE", horario: "00:00 - 02:00", nota: "" },
+{ link: "https://www.youtube.com/embed/emEARENszec", nome: "Purple Disco Machine", style: "Nu-disco/House", palco: "Essence by Beck's", horario: "00:00 - 02:00", nota: "" },
+{ link: "https://www.youtube.com/embed/5LlAC5FN59Y", nome: "Steve Aoki", style: "EDM/Progressive House/Big Room/Future Bass", palco: "Mainstage", horario: "00:50 - 01:50", nota: "" },
+{ link: "https://www.youtube.com/embed/geU67GxTIFg", nome: "Acraze", style: "Deephouse", palco: "Youphoria", horario: "01:00 - 02:00", nota: "" }
   ];
 }
 
@@ -74,13 +80,13 @@ document.querySelector('#proximo').addEventListener('click', () => {
   videos[indice].nota = nota;
   atualizarTabela();
   indice++;
-  localStorage.setItem('notasSalvas1', JSON.stringify(videos));
-  localStorage.setItem('indiceSalvo1', JSON.stringify(indice));
+  localStorage.setItem('sextaNotas', JSON.stringify(videos));
+  localStorage.setItem('indiceSexta', JSON.stringify(indice));
   if (indice >= videos.length) {
     alert('Você avaliou todos os vídeos!');
     //
     indice = 0;
-    JSON.parse(localStorage.getItem('indiceSalvo1')) = indice ;
+    JSON.parse(localStorage.getItem('indiceSexta')) = indice ;
     //
     return;
   }
@@ -90,7 +96,7 @@ document.querySelector('#proximo').addEventListener('click', () => {
 });
 
 function atualizarTabela() {
-  videos.sort((a, b) => b.nota - a.nota);
+  //videos.sort((a, b) => b.nota - a.nota);
   tabelaNotas.innerHTML = '';
   for (let i = 0; i < videos.length; i++) {
     const video = videos[i];
@@ -100,6 +106,8 @@ function atualizarTabela() {
       <td>${video.nome}</td>
       <td>${video.nota}</td>
       <td>${video.style}</td>
+      <td>${video.palco}</td>	
+      <td>${video.horario}</td>
     `;
     const btn = document.createElement('button2');
     btn.textContent = 'Editar';
@@ -129,7 +137,7 @@ function atualizarTabela() {
       video.nota = "";
     }
     atualizarTabela();
-    localStorage.setItem('notasSalvas1', JSON.stringify(videos));
+    localStorage.setItem('sextaNotas', JSON.stringify(videos));
   });
 
 function exportarTabela() {
@@ -188,67 +196,3 @@ function exportarTabela() {
 
 atualizarTabela();
 
-
-/* /*
-  { link: "https://www.youtube.com/embed/qrOCRqYjebI?t=415", nome: "Acraze", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/Evz8iIl5yrM?t=1607", nome: "Afrojack", style: "Pop/House/Progressive/Big Room", nota: "" },
-  { link: "https://www.youtube.com/embed/1FHngx3GvJA?t=181", nome: "Aline Rocha", style: "Soulful & House", nota: "" },
-  { link: "https://www.youtube.com/embed/j1ZZOuxtzrc?t=582", nome: "Alok", style: "DeepHouse/House/Brazilian Bass", nota: "" },
-  { link: "https://www.youtube.com/embed/yrU-zBOGZPw?t=961", nome: "Amber Bross", style: "Trance/Liquid Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/EF9JTFq8ErY?t=2940", nome: "Anamê", style: "Trance/Liquid Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/n5y0nPPUAQc?t=2561", nome: "Andromedik", style: "Drum And Bass", nota: "" },
-  { link: "https://www.youtube.com/embed/E-CdJFlKyNc?t=1865", nome: "Aura Vortex", style: "Psy Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/taJKkbv0jq0?t=1637", nome: "B Jones", style: "PopHouse/Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/U7JKifvBAbQ", nome: "Bakermat", style: "Dance/Pop/SoulHouse", nota: "" },
-  { link: "https://www.youtube.com/embed/uVINeFCjgFg?t=1290", nome: "BassJackers", style: "Big Room/Progressive House/FutureHouse", nota: "" },
-  { link: "https://www.youtube.com/embed/8Pl3j5xQFlU?t=869", nome: "BlastoyzA", style: "Psy Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/hgfJoV5Lmbw?t=596", nome: "Brennan Heart", style: "HardStyle", nota: "" },
-  { link: "https://www.youtube.com/embed/i9StkfKg0SQ?t=1269", nome: "Brina Knauss", style: "Melodic House/Liquid/Electro", nota: "" },
-  { link: "https://www.youtube.com/embed/E8Y-N9OT01U?t=1012", nome: "Bruno Be", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/Z9eDJndet_c?t=391", nome: "Bruno martini ", style: "House/Deephouse/Dance Pop", nota: "" },
-  { link: "https://www.youtube.com/embed/9JTFHc6U8jc?t=503", nome: "Carola", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/UxsQ4_ZH870?t=6752", nome: "Cat Dealers", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/xOqULY4ZBT0?t=1200", nome: "Chapeleiro", style: "Psy Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/5hZzU7Jhr0I?t=1035", nome: "Chemical Surf", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/psHA5maXX_4?t=1464", nome: "Coone", style: "HardStyle", nota: "" },
-  { link: "https://www.youtube.com/embed/U6YBRoq2zEU?t=2993", nome: "Da Tweekaz", style: "HardStyle", nota: "" },
-  { link: "https://www.youtube.com/embed/nsNCK3EJpao?t=407", nome: "Dimitri vegas & Like mike", style: "Big Room/Trance/Techno", nota: "" },
-  { link: "https://www.youtube.com/embed/4QfLqcvnwWg?t=816", nome: "Dino Lenny", style: "Techno/Underground", nota: "" },
-  { link: "https://www.youtube.com/embed/xMQKQz6H2RA?t=1319", nome: "Dj Glen", style: "House Classics/DeepHouse", nota: "" },
-  { link: "https://www.youtube.com/embed/WZCQlZsHkHo?t=1957", nome: "Dj Marky ", style: "Drum And Bass", nota: "" },
-  { link: "https://www.youtube.com/embed/pLqipJNItIo?t=1366", nome: "Don Diablo", style: "EDM/Electro House/Future House", nota: "" },
-  { link: "https://www.youtube.com/embed/mfcylo7DZfQ?t=1187", nome: "Doozie", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/8NwFL49cSjw?t=1437", nome: "Dubdogz", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/2hjOVynhTGA?t=2071", nome: "Fancy Inc", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/hf0YbhqY-Ew?t=4875", nome: "Fernanda Pistelli", style: "Psy Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/3wRtMN19JLM?t=2651", nome: "Freedom Fighters", style: "Psy Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/vK45BvHWcOU?t=862", nome: "Gui Boratto ", style: "Techno/House", nota: "" },
-  { link: "https://www.youtube.com/embed/6WqatqyeBqk?t=1783", nome: "Inndrive", style: "Groove/Techno", nota: "" },
-  { link: "https://www.youtube.com/embed/bkwfc7uR2yw?t=378", nome: "Jessica Audifrfred", style: "Dubstep", nota: "" },
-  { link: "https://www.youtube.com/embed/dgz2eVXWWAM?t=857", nome: "John Newman", style: "House/Progressive House", nota: "" },
-  { link: "https://www.youtube.com/embed/lXxtONrGqxk?t=842", nome: "Jord", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/6GHiYo3530o?t=4154", nome: "Liquid Soul", style: "Psy Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/w3yRKiJ9Vqk?t=491", nome: "Lost Frequencies", style: "Tropical House/DownTempo", nota: "" },
-  { link: "https://www.youtube.com/embed/TC2HMhU2sr8?t=320", nome: "Malifoo", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/AhIElZvdRjY?t=1597", nome: "Mandy", style: "HardStyle", nota: "" },
-  { link: "https://www.youtube.com/embed/GdMtN5Ifm-I?t=1163", nome: "Martin Garrix", style: "Progressive House/Big Room/Future Bass", nota: "" },
-  { link: "https://www.youtube.com/embed/OsZ9Ik0G_KE?t=2322", nome: "Mattn", style: "House/Big Room", nota: "" },
-  { link: "https://www.youtube.com/embed/rKmeiBDUWt8?t=1377", nome: "Nervo", style: "House/Psy/ElectroHouse/ProgressiveHouse", nota: "" },
-  { link: "https://www.youtube.com/embed/t-YvpDRBnJk?t=761", nome: "Netsky", style: "Drum And Bass", nota: "" },
-  { link: "https://www.youtube.com/embed/6GIA7hXhwNI?t=2260", nome: "Nightmre", style: "Dubstep", nota: "" },
-  { link: "https://www.youtube.com/embed/0fKRazDggq8?t=4370", nome: "Ownboss", style: "Deephouse", nota: "" },
-  { link: "https://www.youtube.com/embed/QKxGGpJNU1w?t=1695", nome: "Paul Kalbrenner", style: "Techno/Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/iA1aGTood8c?t=934", nome: "Pontifexx", style: "DeepHouse/House/", nota: "" },
-  { link: "https://www.youtube.com/embed/MPt3z9ISwCs?t=2726", nome: "Pretty Pink", style: "Trance/Melodic Trance/AjunaDeeps", nota: "" },
-  { link: "https://www.youtube.com/embed/Nm-I3ey4Wf4?t=1348", nome: "Scorz ", style: "Trance/Progressive Trance", nota: "" },
-  { link: "https://www.youtube.com/embed/7DE0TAz5xbg?t=1480", nome: "Sebastian Ingrosso", style: "House/Dance/Progressive House", nota: "" },
-  { link: "https://www.youtube.com/embed/DtLJ-is6koo?t=835", nome: "Seveenn", style: "Slap House/ Melodic House", nota: "" },
-  { link: "https://www.youtube.com/embed/L3ZNg6zDAAo?t=2244", nome: "Steve Angelo", style: "EDM/Progressive House/Big Room/Future Bass", nota: "" },
-  { link: "https://www.youtube.com/embed/ErSIEdbe1DU?t=2812", nome: "Steve Aoki", style: "EDM/Progressive House/Big Room/Future Bass", nota: "" },
-  { link: "https://www.youtube.com/embed/iIQVr40Mnw4?t=787", nome: "Sub Zero Project", style: "Drum And Bass/Hardstyle", nota: "" },
-  { link: "https://www.youtube.com/embed/PVKDEzGeGyw?t=1036", nome: "Sunnery James & Ryan Marciano", style: "House/Progressive House/ ElectroHouse", nota: "" },
-  { link: "https://www.youtube.com/embed/7iP5zNyXtnw?t=2006", nome: "Tiesto", style: "Deephouse/Future House/Trance/Tropical House", nota: "" },
-  { link: "https://www.youtube.com/embed/r5jKJBhk3aY?t=194", nome: "Vinne", style: "Deephouse/Brazilian Bass", nota: "" },
-  { link: "https://www.youtube.com/embed/KgO7--NuCfs?t=1490", nome: "Yves V", style: "Indie/Progressive House/ElectroHouse", nota: "" },
-  { link: "https://www.youtube.com/embed/Lb0SitkYgbo?t=1935", nome: "Zac", style: "House/Electro/DeepHouse", nota: "" }
-  */
