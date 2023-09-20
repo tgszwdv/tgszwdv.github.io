@@ -38,7 +38,7 @@ if (JSON.parse(localStorage.getItem('indiceSexta')) > 0) {
 { link: "https://www.youtube.com/embed/CVKBlYp62M8", nome: "Chapeleiro", style: "Psy Trance", palco: "Tulip", horario: "19:00 - 20:00", nota: "" },
 { link: "https://www.youtube.com/embed/P9mnmm-zxcI", nome: "Liu", style: "Deephouse", palco: "Youphoria", horario: "19:00 - 20:00", nota: "" },
 { link: "https://www.youtube.com/embed/r9O_lNCx5EA", nome: "Nervo", style: "House/Psy/ElectroHouse/ProgressiveHouse", palco: "Mainstage", horario: "19:40 - 20:40", nota: "" },
-{ link: "https://www.youtube.com/embed/tyoSiO9Iccw&t=968s", nome: "Blastoyz", style: "Psy Trance", palco: "Tulip", horario: "20:00 - 21:00", nota: "" },
+{ link: "https://www.youtube.com/embed/tyoSiO9Iccw", nome: "Blastoyz", style: "Psy Trance", palco: "Tulip", horario: "20:00 - 21:00", nota: "" },
 { link: "https://www.youtube.com/embed/5hZzU7Jhr0I?t=1035", nome: "Chemical Surf", style: "Deephouse", palco: "Youphoria", horario: "20:00 - 21:00", nota: "" },
 { link: "https://www.youtube.com/embed/6dB0n_mLqJA", nome: "Jaguar", style: "House", palco: "CORE", horario: "20:00 - 22:00", nota: "" },
 { link: "https://www.youtube.com/embed/9ynMx2qAYAE", nome: "Korolova ", style: "Melodic Trance", palco: "Essence by Beck's", horario: "20:00 - 22:00", nota: "" },
