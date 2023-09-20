@@ -56,7 +56,7 @@ if (JSON.parse(localStorage.getItem('indiceSexta')) > 0) {
 { link: "https://www.youtube.com/embed/A4lTUgJWNIw", nome: "Dimitri vegas & Like mike", style: "Big Room/Trance/Techno", palco: "Mainstage", horario: "23:50 - 00:50", nota: "" },
 { link: "https://www.youtube.com/embed/IajHfZrqS4w", nome: "Lost Frequencies", style: "Tropical House/DownTempo", palco: "Youphoria", horario: "00:00 - 01:00", nota: "" },
 { link: "https://www.youtube.com/embed/iIQVr40Mnw4", nome: "Sub Zero Project", style: "Drum And Bass/Hardstyle", palco: "Tulip", horario: "00:00 - 01:00", nota: "" },
-{ link: "https://www.youtube.com/embed/Gy0RM9yjyhM&t=1127s", nome: "Âme", style: "House/Techno", palco: "CORE", horario: "00:00 - 02:00", nota: "" },
+{ link: "https://www.youtube.com/embed/Gy0RM9yjyhM", nome: "Âme", style: "House/Techno", palco: "CORE", horario: "00:00 - 02:00", nota: "" },
 { link: "https://www.youtube.com/embed/emEARENszec", nome: "Purple Disco Machine", style: "Nu-disco/House", palco: "Essence by Beck's", horario: "00:00 - 02:00", nota: "" },
 { link: "https://www.youtube.com/embed/5LlAC5FN59Y", nome: "Steve Aoki", style: "EDM/Progressive House/Big Room/Future Bass", palco: "Mainstage", horario: "00:50 - 01:50", nota: "" },
 { link: "https://www.youtube.com/embed/geU67GxTIFg", nome: "Acraze", style: "Deephouse", palco: "Youphoria", horario: "01:00 - 02:00", nota: "" }
