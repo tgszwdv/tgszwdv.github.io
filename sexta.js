@@ -197,10 +197,16 @@ document.getElementById("headerNota").addEventListener('click', () => {
 });
 
 document.getElementById("headerPalco").addEventListener('click', () => {
-  // Sort the videos array by 'palco' property in descending order
-  videos.sort((a, b) => b.palco - a.palco);
+  // Sort the videos array by 'palco' property in alphabetical order
+  videos.sort((a, b) => a.palco.localeCompare(b.palco));
   atualizarTabela(); // Update the table
 });
+
+document.getElementById("headerHorario").addEventListener('click', () => {
+  // Reload the page when the "Horario" header is clicked
+  window.location.reload();
+});
+  
   
 
 
