@@ -53,7 +53,7 @@ if (JSON.parse(localStorage.getItem('indiceSexta')) > 0) {
 { link: "https://www.youtube.com/embed/7DE0TAz5xbg?t=1480", nome: "Sebastian Ingrosso", style: "House/Dance/Progressive House", palco: "Mainstage", horario: "22:50 - 23:50", nota: "" },
 { link: "https://www.youtube.com/embed/U7JKifvBAbQ", nome: "Bakermat", style: "Dance/Pop/SoulHouse", palco: "Youphoria", horario: "23:00 - 00:00", nota: "" },
 { link: "https://www.youtube.com/embed/jO7_r2nf__k", nome: "Da Tweekaz", style: "HardStyle", palco: "Tulip", horario: "23:00 - 00:00", nota: "" },
-{ link: "https://www.youtube.com/embed/A4lTUgJWNIw&t=1s", nome: "Dimitri vegas & Like mike", style: "Big Room/Trance/Techno", palco: "Mainstage", horario: "23:50 - 00:50", nota: "" },
+{ link: "https://www.youtube.com/embed/A4lTUgJWNIw", nome: "Dimitri vegas & Like mike", style: "Big Room/Trance/Techno", palco: "Mainstage", horario: "23:50 - 00:50", nota: "" },
 { link: "https://www.youtube.com/embed/IajHfZrqS4w", nome: "Lost Frequencies", style: "Tropical House/DownTempo", palco: "Youphoria", horario: "00:00 - 01:00", nota: "" },
 { link: "https://www.youtube.com/embed/iIQVr40Mnw4?t=787", nome: "Sub Zero Project", style: "Drum And Bass/Hardstyle", palco: "Tulip", horario: "00:00 - 01:00", nota: "" },
 { link: "https://www.youtube.com/embed/Gy0RM9yjyhM&t=1127s", nome: "Âme", style: "House/Techno", palco: "CORE", horario: "00:00 - 02:00", nota: "" },
