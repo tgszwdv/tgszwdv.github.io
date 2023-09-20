@@ -141,53 +141,68 @@ function atualizarTabela() {
   });
 
 function exportarTabela() {
-    console.log('Exportando tabela...');
-  
-    const tabela = document.createElement('table');
-    tabela.classList.add('tabela-export');
-  
-    // cabeçalho
-    const cabecalho = tabela.createTHead();
-    const rowCabecalho = cabecalho.insertRow(0);
-    const colNome = rowCabecalho.insertCell(0);
-    const colNota = rowCabecalho.insertCell(1);
-    const colStyle = rowCabecalho.insertCell(2);
-    colNome.innerHTML = '<strong>Nome</strong>';
-    colNota.innerHTML = '<strong>Nota</strong>';
-    colStyle.innerHTML = '<strong>Estilo</strong>';
+  console.log('Exportando tabela...');
+
+  const tabela = document.createElement('table');
+  tabela.classList.add('tabela-export');
+
+  // cabeçalho
+  const cabecalho = tabela.createTHead();
+  const rowCabecalho = cabecalho.insertRow(0);
+  const colNome = rowCabecalho.insertCell(0);
+  const colNota = rowCabecalho.insertCell(1);
+  const colStyle = rowCabecalho.insertCell(2);
+  const colPalco = rowCabecalho.insertCell(3); 
+  const colHorario = rowCabecalho.insertCell(4); 
+  colNome.innerHTML = '<strong>Nome</strong>';
+  colNota.innerHTML = '<strong>Nota</strong>';
+  colStyle.innerHTML = '<strong>Estilo</strong>';
+  colPalco.innerHTML = '<strong>Palco</strong>'; 
+  colHorario.innerHTML = '<strong>Horario</strong>'; 
+
+  // alterando a cor do texto para branco
+  colNome.style.color = '#FFFACD';
+  colNota.style.color = '#FFFACD';
+  colStyle.style.color = '#FFFACD';
+  colPalco.style.color = '#FFFACD'; 
+  colHorario.style.color = '#FFFACD'; 
+
+  // conteúdo
+  const corpoTabela = tabela.createTBody();
+  for (const video of videos) {
+    const tr = corpoTabela.insertRow();
+    const colNome = tr.insertCell();
+    const colNota = tr.insertCell();
+    const colStyle = tr.insertCell();
+    const colPalco = tr.insertCell(); 
+    const colHorario = tr.insertCell(); 
+    colNome.textContent = video.nome;
+    colNota.textContent = video.nota;
+    colStyle.textContent = video.style;
+    colPalco.textContent = video.palco; 
+    colHorario.textContent = video.horario; 
+
     // alterando a cor do texto para branco
     colNome.style.color = '#FFFACD';
     colNota.style.color = '#FFFACD';
     colStyle.style.color = '#FFFACD';
-  
-    // conteúdo
-    const corpoTabela = tabela.createTBody();
-    for (const video of videos) {
-      const tr = corpoTabela.insertRow();
-      const colNome = tr.insertCell();
-      const colNota = tr.insertCell();
-      const colStyle = tr.insertCell();
-      colNome.textContent = video.nome;
-      colNota.textContent = video.nota;
-      colStyle.textContent = video.style;
-      // alterando a cor do texto para branco
-      colNome.style.color = '#FFFACD';
-      colNota.style.color = '#FFFACD';
-      colStyle.style.color = '#FFFACD';
-    }
-  
-    document.body.appendChild(tabela);
-  
-    html2canvas(tabela, {backgroundColor: '#000000'}).then(function(canvas) {
-      const link = document.createElement('a');
-      link.download = 'tabela.png';
-      link.href = canvas.toDataURL('image/png');
-      link.click();
-  
-      document.body.removeChild(tabela);
-    });
+    colPalco.style.color = '#FFFACD'; 
+    colHorario.style.color = '#FFFACD'; 
   }
-  document.querySelector('#exportar').addEventListener('click', exportarTabela);
+
+  document.body.appendChild(tabela);
+
+  html2canvas(tabela, { backgroundColor: '#000000' }).then(function (canvas) {
+    const link = document.createElement('a');
+    link.download = 'tabela.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+
+    document.body.removeChild(tabela);
+  });
+}
+
+document.querySelector('#exportar').addEventListener('click', exportarTabela);
 
 
 document.getElementById("headerNota").addEventListener('click', () => {
