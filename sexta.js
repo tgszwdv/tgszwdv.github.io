@@ -188,7 +188,19 @@ function exportarTabela() {
     });
   }
   document.querySelector('#exportar').addEventListener('click', exportarTabela);
-  
+
+
+document.getElementById("headerNota").addEventListener('click', () => {
+  // Sort the videos array by 'nota' property in descending order
+  videos.sort((a, b) => b.nota - a.nota);
+  atualizarTabela(); // Update the table
+});
+
+document.getElementById("headerPalco").addEventListener('click', () => {
+  // Sort the videos array by 'nota' property in descending order
+  videos.sort((a, b) => b.nota - a.nota);
+  atualizarTabela(); // Update the table
+});
   
 
 
