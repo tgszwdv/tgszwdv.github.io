@@ -23,7 +23,7 @@ if (JSON.parse(localStorage.getItem('indiceSexta')) > 0) {
 { link: "https://www.youtube.com/embed/yi6d1kWsHSM?t=1272", nome: "Gabe ", style: "Deephouse", palco: "Essence by Beck's", horario: "15:30 - 17:00", nota: "" },
 { link: "https://www.youtube.com/embed/IygyK03E1bY", nome: "Mila Journée", style: "Melodic/Deep House", palco: "CORE", horario: "15:30 - 17:00", nota: "" },
 { link: "https://www.youtube.com/embed/E-CdJFlKyNc?t=1865", nome: "Aura Vortex", style: "Psy Trance", palco: "Tulip", horario: "16:00 - 17:00", nota: "" },
-{ link: "https://www.youtube.com/embed/M2ED8cWt7AU", nome: "Dj Glen", style: "House Classics/DeepHouse", palco: "Youphoria", horario: "16:00 - 17:00", nota: "" },
+{ link: "https://www.youtube.com/embed/ZPhcmTsh1FQ", nome: "Dj Glen", style: "House Classics/DeepHouse", palco: "Youphoria", horario: "16:00 - 17:00", nota: "" },
 { link: "https://www.youtube.com/embed/o8UEQXwfXIQ", nome: "Carola", style: "Deephouse", palco: "Mainstage", horario: "16:30 - 17:30", nota: "" },
 { link: "https://www.youtube.com/embed/3wRtMN19JLM?t=2651", nome: "Freedom Fighters", style: "Psy Trance", palco: "Tulip", horario: "17:00 - 18:00", nota: "" },
 { link: "https://www.youtube.com/embed/UT_66xW3lck", nome: "Jørd ", style: "Deephouse", palco: "Youphoria", horario: "17:00 - 18:00", nota: "" },
