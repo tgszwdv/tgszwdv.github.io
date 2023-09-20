@@ -197,8 +197,8 @@ document.getElementById("headerNota").addEventListener('click', () => {
 });
 
 document.getElementById("headerPalco").addEventListener('click', () => {
-  // Sort the videos array by 'nota' property in descending order
-  videos.sort((a, b) => b.nota - a.nota);
+  // Sort the videos array by 'palco' property in descending order
+  videos.sort((a, b) => b.palco - a.palco);
   atualizarTabela(); // Update the table
 });
   
