@@ -68,6 +68,34 @@
     footer p {
       font-size: 12px;
     }
+
+    .button-description {
+    text-align: left;
+    margin-top: 20px;
+    color: #00FFFF; /* Neon blue color */
+}
+
+.neon-text {
+    font-size: 16px;
+    text-shadow:
+        0 0 10px #00FFFF,
+        0 0 20px #00FFFF,
+        0 0 30px #00FFFF,
+        0 0 40px #00FFFF,
+        0 0 50px #00FFFF,
+        0 0 60px #00FFFF,
+        0 0 70px #00FFFF;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
   </style>
 </head>
 <body>
@@ -79,6 +107,19 @@
     <a href="https://tgszwdv.github.io/sabado"><button>SÁBADO</button></a>
     <a href="https://tgszwdv.github.io/all"><button>ALL</button></a>
   </div>
+
+  <div class="button-description">
+    <p class="neon-text">
+        Como funciona:
+    </p>
+    <ol class="neon-text">
+        <li>Selecione o dia que você deseja avaliar.</li>
+        <li>Veja uma parte do set e atribua a nota conforme o seu gosto.</li>
+        <li>Você pode baixar a sua avaliação como Imagem para levar no dia contigo :)</li>
+        <li>Você pode ordenar a tabela conforme o seu gosto... Nota, Gênero, Palco e Horário.</li>
+        <li>Você pode continuar de onde parou, mas atenção, apenas do mesmo dispositivo e navegador que você inicialmente começar a avaliar.</li>
+    </ol>
+</div>
     
   <footer>
     <p>@tgszwdv</p>
