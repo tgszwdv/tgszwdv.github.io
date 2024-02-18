@@ -16,7 +16,7 @@ function toggleFullscreen() {
     }
 }
 
-toggleFullscreen()
+
 
 
 document.querySelector('.container1').style.display = 'none'; // Exibir o container1
