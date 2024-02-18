@@ -271,7 +271,7 @@ const perguntasRespostas = [
       const perguntasEmbaralhadas = shuffleArray(perguntasRespostas);
       
       let indicePerguntaAtual = 0;
-      let tempoRestante = 10; // Tempo em segundos
+      let tempoRestante = 12; // Tempo em segundos
       let timerId;
       let respostasUsuario = []; // Array para armazenar as respostas do usuário
       
