@@ -1,4 +1,4 @@
-const fullscreenButton = document.getElementById('fullscreenButton');
+/*const fullscreenButton = document.getElementById('fullscreenButton');
 
 function toggleFullscreen() {
     // Verifica se o navegador suporta o método requestFullscreen
@@ -15,7 +15,32 @@ function toggleFullscreen() {
         console.error('O navegador não suporta o modo de tela cheia.');
     }
 }
+*/
 
+
+const fullscreenButton = document.getElementById('fullscreenButton');
+
+function toggleFullscreen() {
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen()
+            .then(() => {
+                console.log('Entrou em modo de tela cheia.');
+            })
+            .catch((error) => {
+                console.error('Erro ao entrar em modo de tela cheia:', error);
+            });
+    } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen()
+            .then(() => {
+                console.log('Entrou em modo de tela cheia.');
+            })
+            .catch((error) => {
+                console.error('Erro ao entrar em modo de tela cheia:', error);
+            });
+    } else {
+        console.error('O navegador não suporta o modo de tela cheia.');
+    }
+}
 
 
 
