@@ -4,48 +4,241 @@ function iniciarJogo () {
 
 document.querySelector('.container1').style.display = 'block'; // Exibir o container1
 document.querySelector('.IniciarJogo').style.display = 'none'; // Ocultar o botão "Iniciar Jogo"
-    const perguntasRespostas = [
-        {
-          "Pergunta": "Cite 3 cores primárias",
-          "Resposta": []
-        },
-        {
-          "Pergunta": "Cite três capitais do Brasil",
-          "Resposta": []
-        },
-        {
-          "Pergunta": "Cite 3 países da Europa",
-          "Resposta": []
-        },
-        {
-          "Pergunta": "Cite 3 elementos químicos gasosos",
-          "Resposta": []
-        },
-        {
-          "Pergunta": "Cite 3 marcas de carros",
-          "Resposta": []
-        },
-        {
-          "Pergunta": "Cite 3 tipos de frutas cítricas",
-          "Resposta": []
-        },
-        {
-          "Pergunta": "Cite 3 filmes dirigidos por Quentin Tarantino",
-          "Resposta": []
-        },
-        {
-          "Pergunta": "Cite 3 montanhas famosas",
-          "Resposta": []
-        },
-        {
-          "Pergunta": "Cite 3 tipos de animais marinhos",
-          "Resposta": []
-        },
-        {
-          "Pergunta": "Cite 3 estações do ano",
-          "Resposta": []
-        }
-      ];
+const perguntasRespostas = [
+    {
+      "Pergunta": "Cite 3 cores primárias",
+      "Resposta": []
+    },
+    {
+      "Pergunta": "Cite três capitais do Brasil",
+      "Resposta": []
+    },
+    {
+      "Pergunta": "Cite 3 países da Europa",
+      "Resposta": []
+    },
+    {
+      "Pergunta": "Cite 3 elementos químicos gasosos",
+      "Resposta": []
+    },
+    {
+      "Pergunta": "Cite 3 marcas de carros",
+      "Resposta": []
+    },
+    {
+      "Pergunta": "Cite 3 tipos de frutas cítricas",
+      "Resposta": []
+    },
+    {
+      "Pergunta": "Cite 3 filmes dirigidos por Quentin Tarantino",
+      "Resposta": []
+    },
+    {
+      "Pergunta": "Cite 3 montanhas famosas",
+      "Resposta": []
+    },
+    {
+      "Pergunta": "Cite 3 tipos de animais marinhos",
+      "Resposta": []
+    },
+    {
+      "Pergunta": "Cite 3 estações do ano",
+      "Resposta": []
+    },
+{
+    "Pergunta": "Cite 3 cores primárias",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite três capitais do Brasil",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 países da Europa",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 elementos químicos gasosos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 marcas de carros",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 tipos de frutas cítricas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 filmes dirigidos por Quentin Tarantino",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 montanhas famosas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 tipos de animais marinhos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 estações do ano",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 marcas de smartphones",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 idiomas falados na América do Sul",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 rios famosos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 atores vencedores do Oscar",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 estilos de dança",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 escritores famosos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 tipos de música",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 instrumentos musicais",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 esportes olímpicos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 marcas de roupas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 personagens de desenhos animados",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 elementos do sistema solar",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 atores de filmes de ação",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 filósofos famosos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 praias famosas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 bandas de rock",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 gêneros literários",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 países da Ásia",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 cientistas famosos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 museus famosos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 formas geométricas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 pintores famosos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 filósofos gregos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 estilos de arte",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 séries de TV populares",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 aplicativos de redes sociais",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 parques de diversões",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 cidades históricas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 capitais europeias",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 capitais asiáticas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 capitais africanas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 capitais americanas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 capitais oceânicas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 jogos de tabuleiro",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 pedras preciosas",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 inventores famosos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 monumentos históricos",
+     "Resposta": []
+},
+{
+    "Pergunta": "Cite 3 termos de informática",
+     "Resposta": []
+}
+
+  ];
       
       function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
