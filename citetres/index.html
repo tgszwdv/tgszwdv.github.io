@@ -9,16 +9,17 @@
 </head>
 <body>
   <div class="IniciarJogo">
-    <button id="btnIniciarJogo" onclick="iniciarJogo()">Iniciar Jogo</button>
+    <button id="btnIniciarJogo" onclick="iniciarJogo();toggleFullscreen()">Iniciar Jogo</button>
 </div>
   <div class="container1">
     <h1>Cite Três</h1>
     <div id="pergunta" class="pergunta"></div>
+    <p id="timer" class="timer">Tempo restante: <br><span id="tempo">7</span> segundos</p>
     <input type="text" class="resposta" placeholder="Resposta 1...">
     <input type="text" class="resposta" placeholder="Resposta 2...">
     <input type="text" class="resposta" placeholder="Resposta 3...">
     <button id="btnResponder">Responder</button>
-    <p id="timer" class="timer">Tempo restante: <br><span id="tempo">7</span> segundos</p>
+    
   </div>
   <div class="container2">
      <p id="gameOver" class="gameOver" style="display: none; color: red;">Game Over</p>

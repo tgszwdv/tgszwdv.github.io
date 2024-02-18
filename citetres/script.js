@@ -1,3 +1,22 @@
+const fullscreenButton = document.getElementById('fullscreenButton');
+
+function toggleFullscreen() {
+    // Verifica se o navegador suporta o método requestFullscreen
+    if (document.documentElement.requestFullscreen) {
+        // Coloca o documento em modo de tela cheia
+        document.documentElement.requestFullscreen()
+            .then(() => {
+                console.log('Entrou em modo de tela cheia.');
+            })
+            .catch((error) => {
+                console.error('Erro ao entrar em modo de tela cheia:', error);
+            });
+    } else {
+        console.error('O navegador não suporta o modo de tela cheia.');
+    }
+}
+
+
 document.querySelector('.container1').style.display = 'none'; // Exibir o container1
 
 function iniciarJogo () {
