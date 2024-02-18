@@ -271,7 +271,7 @@ const perguntasRespostas = [
       const perguntasEmbaralhadas = shuffleArray(perguntasRespostas);
       
       let indicePerguntaAtual = 0;
-      let tempoRestante = 7; // Tempo em segundos
+      let tempoRestante = 10; // Tempo em segundos
       let timerId;
       let respostasUsuario = []; // Array para armazenar as respostas do usuário
       
@@ -303,7 +303,7 @@ const perguntasRespostas = [
           if (perguntaAtual.Resposta.every(resposta => resposta !== '')) {
             indicePerguntaAtual++;
             exibirProximaPergunta();
-            tempoRestante = 7;
+            tempoRestante = 10;
             atualizarTempo();
             limpaInputs();
           } else {
