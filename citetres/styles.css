@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container1 {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .IniciarJogo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .container2 {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  
+  .pergunta {
+    font-size: 55px; /* Tamanho maior para as perguntas */
+    font-weight: bold; /* Negrito para as perguntas */
+    margin-bottom: 20px; /* Espaçamento inferior para as perguntas */
+  }
+  
+  .resposta {
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 8px; /* Adicionando bordas arredondadas */
+  }
+  
+  
+  button {
+    padding: 15px 30px; /* Ajuste o padding para aumentar o tamanho do botão */
+    font-size: 20px; /* Ajuste o tamanho do texto */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .timer {
+    font-size: 55px; /* Tamanho maior para o texto do timer */
+    margin-top: 20px; /* Espaçamento superior para o timer */
+  }
+  
+  .gameOver {
+    font-size: 55px;
+    margin-top: 15px; /* Espaçamento superior para a mensagem de game over */
+  }
+  
+  .resultado {
+    font-size: 55px;
+    margin-top: 20px; /* Espaçamento superior para o resultado */
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .pergunta {
+      font-size: 35px;
+    }
+    
+    .resposta {
+      padding: 15px;
+      width: 90%;
+      font-size: 18px;
+    }
+
+    .resultado {
+        font-size: 35px;
+       
+  }
+  
