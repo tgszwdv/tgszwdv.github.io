@@ -303,7 +303,7 @@ const perguntasRespostas = [
           if (perguntaAtual.Resposta.every(resposta => resposta !== '')) {
             indicePerguntaAtual++;
             exibirProximaPergunta();
-            tempoRestante = 10;
+            tempoRestante = 12;
             atualizarTempo();
             limpaInputs();
           } else {
